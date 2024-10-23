@@ -18,6 +18,18 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Behaviour.cpp" />
+    <ClCompile Include="Transition.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Action.hpp" />
+    <ClInclude Include="Behaviour.hpp" />
+    <ClInclude Include="Condition.hpp" />
+    <ClInclude Include="Context.hpp" />
+    <ClInclude Include="Plant.hpp" />
+    <ClInclude Include="Transition.hpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -132,18 +144,6 @@
       <AdditionalDependencies>sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;gdi32.lib;winmm.lib;freetype.lib;opengl32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\player_statemachine\Behaviour.cpp" />
-    <ClCompile Include="..\..\player_statemachine\Transition.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\player_statemachine\Action.hpp" />
-    <ClInclude Include="..\..\player_statemachine\Behaviour.hpp" />
-    <ClInclude Include="..\..\player_statemachine\Condition.hpp" />
-    <ClInclude Include="..\..\player_statemachine\Context.hpp" />
-    <ClInclude Include="..\..\player_statemachine\Plant.hpp" />
-    <ClInclude Include="..\..\player_statemachine\Transition.hpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
